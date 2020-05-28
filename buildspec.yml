@@ -11,5 +11,5 @@ phases:
   build:
     commands:
       - docker images
-      - docker run helloworld echo "Hello, World!" 
-      - docker exec -t helloworld "Hello.................."
+      - docker run -d --name dummy helloworld
+      - docker exec -t dummy echo "Hello.....World............."
