@@ -12,3 +12,4 @@ phases:
     commands:
       - docker images
       - docker run helloworld echo "Hello, World!" 
+      - docker exec echo "Hello"
