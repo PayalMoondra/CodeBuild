@@ -1,3 +1,13 @@
-FROM maven:3.3.9-jdk-8
- 
-RUN echo "Hello World"
+FROM ubuntu:14.04
+LABEL maintainer="Payal"
+USER root
+RUN apt-get -y --fix-missing update \
+  && apt-get -y install --fix-missing --no-install-recommends \
+     build-essential \
+     python-dev \
+     python-pip \
+     python-setuptools \
+  && pip install --upgrade pip\
+  && pip install awscli
+  && pip install pytest
+  && pytest --version
