@@ -12,4 +12,5 @@ phases:
     commands:
       - docker images
       - docker run -d --name dummy helloworld
+      - docker ps
       - docker exec -t dummy echo "Hello.....World............."
