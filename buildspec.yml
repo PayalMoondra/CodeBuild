@@ -11,6 +11,6 @@ phases:
   build:
     commands:
       - docker images
-      - docker run -p 8080:8080 -p 50000:50000 -d helloworld --name dummy 
+      - docker run -p 8080:8080 -p 50000:50000 -d --name dummy helloworld
       - docker ps
       - docker exec -t dummy echo "Hello.....World............."
