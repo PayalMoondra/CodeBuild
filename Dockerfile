@@ -7,7 +7,7 @@ RUN apt-get -y --fix-missing update \
      python-dev \
      python-pip \
      python-setuptools \
-  && pip install --upgrade pip\
-  && pip install --upgrade setuptools \
-  && pip install pytest \
+  && pip install --upgrade pip
+ FROM python:3.7-alpine
+ RUN pip install pytest \
   && pytest --version
