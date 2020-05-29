@@ -12,3 +12,5 @@ phases:
     commands:
       - docker images
       - echo "Branch 2............."
+      - cat file_2.txt
+      - ls -l file_2.txt
