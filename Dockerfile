@@ -8,6 +8,6 @@ RUN apt-get -y --fix-missing update \
      python-pip \
      python-setuptools \
   && pip install --upgrade pip\
-  && pip install awscli \
+  && pip install --upgrade setuptools \
   && pip install pytest \
   && pytest --version
